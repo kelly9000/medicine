@@ -1,0 +1,17 @@
+.Login {
+  text-align: center;
+  max-width: 540px;
+  align : center;
+  margin-top: 100px;
+}
+h2{
+  text-decoration-color: blue;
+  color: #2f9c30;
+}
+
+.form-control{
+ outline-color: green;
+}
+.btn{
+   margin: 10px;
+}

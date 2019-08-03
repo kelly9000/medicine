@@ -9,7 +9,7 @@ function Login() {
 
   <div className="row no-gutters">
     <div className="col-md-4">
-      <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/07/medical-logo.jpg" className="card-img" alt="..."></img>
+      <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/07/medical-logo.jpg" className="card-img" alt="logo"></img>
     </div>
     <div className="col-md-8 bg-light y">
      <h2> Login</h2>
@@ -22,10 +22,11 @@ function Login() {
   </div>
   <div className="form-group">
     <label for="password">Password</label>
-    <input type="password" className="form-control" id="password" placeholder="Password"></input>
+    <input type="password" className="form-control " id="password" placeholder="Password"></input>
   </div>
   
   <button type="submit" className="btn btn-primary">Submit</button>
+  <button type="button" class="btn btn-primary">Register</button>
 </form>
       </div>
     </div>
