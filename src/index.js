@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Login from './Components/login/Login';
 import Register from './Components/register/Register';
+import Searchcomponent from './Components/search/Search';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<div align="center" width="100%">
-					<Login/>
-					<Register/>
+ReactDOM.render(<div align="center">
+					<Searchcomponent/>
+					
 				</div>	
 
 	, document.getElementById('root'));
