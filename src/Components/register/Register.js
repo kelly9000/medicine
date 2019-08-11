@@ -1,9 +1,9 @@
 import React from 'react';
 import './Register.css';
 
-function Register() {
+function Register({cancel}) {
   return (
-    <div className="col-lg-5">
+    <div className="col-lg-11">
     <div className="card mb-3 Register border-secondar">
    
 
@@ -36,7 +36,7 @@ function Register() {
    
   <div className="row">
   <button type="submit" className="btn btn-primary col">Sign up</button>
-  <button type="button" class="btn btn-primary col">cancel</button>
+  <button type="button" class="btn btn-primary col" onClick={cancel}>cancel</button>
   </div>
 </form>
       </div>

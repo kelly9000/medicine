@@ -1,10 +1,12 @@
 import React from 'react';
 import './Login.css';
+import 'bootstrap';
+import 'jquery';
 
-function Login() {
+function Login({cancel}) {
   return (
-    <div className="col-lg-5">
-    <div className="card mb-3 Login border-secondar">
+    <div className="col-lg-13 login">
+    <div className="card mb-3  border-secondar">
    
 
   <div className="row no-gutters">
@@ -26,7 +28,7 @@ function Login() {
   </div>
   
   <button type="submit" className="btn btn-primary">Submit</button>
-  <button type="button" class="btn btn-primary">Register</button>
+  <button type="button" class="btn btn-primary" onClick={cancel}>Cancel</button>
 </form>
       </div>
     </div>

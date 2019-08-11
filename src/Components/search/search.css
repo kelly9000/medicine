@@ -1,3 +1,4 @@
 .searchbox{
-	width: 1000px;
+	width: 2000px;
+	min-width: 1000px;
 }
