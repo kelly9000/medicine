@@ -9,8 +9,12 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "reactjs-popup": "^1.4.2",
     "semantic-ui-react": "^0.87.3"
   },
+  "exclude": [
+    "node_modules"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

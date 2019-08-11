@@ -1,0 +1,19 @@
+.cl1{
+
+
+max-width: 800px;
+margin: 30px;
+
+}
+.cl1 :hover{
+	text-decoration-color: red;
+}
+h6{
+
+}
+img{
+	max-width: 300px;
+	width: 200px;
+	height: 200px
+
+}

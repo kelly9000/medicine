@@ -11,7 +11,7 @@ document.head.appendChild(styleLink);
 const source = _.times(5, () => ({
   title: faker.company.companyName(),
   description: faker.company.catchPhrase(),
-  image: faker.internet.avatar(),
+ // image: faker.internet.avatar(),
   price: faker.finance.amount(0, 100, 2, '$'),
 }))
 
@@ -49,14 +49,14 @@ this.setState({ value: result.title })
        <Grid >
         <Grid.Column width={6}>
           <Search
-            fluid
+            fluid={true}
            
              input={{ icon: 'search', iconPosition: 'left' }}
              size = "large"
-             length = "7"
+             aligned="left"
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
-            onSearchChange={_.debounce(this.handleSearchChange, 500, {
+            onSearchChange={_.debounce(this.handleSearchChange, 50, {
               leading: true,
             })}
             results={results}
