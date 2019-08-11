@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css';
-import 'bootstrap';
-import 'jquery';
+
 
 function Login({cancel}) {
   return (
