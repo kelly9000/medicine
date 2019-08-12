@@ -9,7 +9,27 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+
+    <!-- firebase components -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAuCg2E3sWkzwwmAT-3W7iu5RNN-C0r87U",
+    authDomain: "med-life.firebaseapp.com",
+    databaseURL: "https://med-life.firebaseio.com",
+    projectId: "med-life",
+    storageBucket: "",
+    messagingSenderId: "799069840222",
+    appId: "1:799069840222:web:0957d160b3d30bb8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
