@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import faker from 'faker';
 import _ from 'lodash';
 import Card from './Components/card/Card';
+import './Body.css';
 
 const source = _.times(20, () => ({
   title: faker.commerce.productName(),
@@ -20,7 +21,7 @@ render(){
 	 const tab = this.props.tab;
 let mainbody =<div/> ;
 if(tab === "home"){
-	return(<div className=" home">
+	return(<div className=" home container">
         	{source.map((data,i)=>{
         	 return	<Card key={i} 
         			  image={data.image}

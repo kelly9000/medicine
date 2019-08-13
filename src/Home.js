@@ -144,7 +144,7 @@ render(){
 	let button;
 	if(!signinstatus){
 		button= <li className="nav-item btn-group" >
-	       <Popup
+	       <Popup 
 	       	  open={this.state.signinopen}
 	        trigger={  <a className="nav-link" href="#" align="right" >	sign in <Icon name='sign-in' size='large' /> </a>}
 	        position=" center center"
