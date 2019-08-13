@@ -113,6 +113,7 @@ render(){
          <div><Login cancel={this.closesignin}/></div>
   </Popup>
    <Popup
+   className="col-lg-13"
        	  open={this.state.registeropen}
         trigger={ <a className="nav-link" href="#">	sign up <Icon name='signup' size='large' /> </a>}
         position=" center center"
