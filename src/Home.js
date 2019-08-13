@@ -52,7 +52,6 @@ firebase.auth().onAuthStateChanged(function(user) {
    	signedin:true
 
    });
-   console.log(obj.state);
   } else {
   	console.log("check");
      obj.setState({user:false});
@@ -106,7 +105,7 @@ trylogin(status=false){
 	let x=this;
 console.log("Login status",status);
 if(status)
-{	this.setState({
+{	x.setState({
 			signedin:true
 		});
 firebase.auth().onAuthStateChanged(function(user) {
@@ -119,7 +118,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 }else{
-	this.setState({
+	x.setState({
 			signedin:false
 		});
 }
@@ -162,10 +161,10 @@ render(){
 	        position=" center center"
 	        modal
 	        closeOnDocumentClick
-	         onClose={this.closeregister}
-	         onOpen= {this.openregister}
+	         onClose={()=>this.registerbox(false)}
+	         onOpen= {()=>this.registerbox(true)}
 	        > 
-	         <div><Register cancel={this.closeregister} firebase={firebase} register={this.trylogin}/></div>
+	         <div><Register cancel={()=>this.registerbox(false)} firebase={firebase} register={this.trylogin}/></div>
 	  </Popup>
 	          </li>;
 	    }else{
