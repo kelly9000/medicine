@@ -8,7 +8,6 @@ import Body from './Body';
 import Register from './Components/register/Register';
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
  // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAuCg2E3sWkzwwmAT-3W7iu5RNN-C0r87U",
